@@ -31,3 +31,10 @@ function mousePressed() {
   b = new bubble();
   //redraw();
 }
+
+function touchStarted() {
+  var scoreAmount = b.clickPoint(mouseX, mouseY);
+  score += scoreAmount;
+  pt = new pointsText(scoreAmount);
+  b = new bubble();
+}
