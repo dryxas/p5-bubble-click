@@ -33,7 +33,7 @@ function mousePressed() {
 }
 
 function touchStarted() {
-  var scoreAmount = b.clickPoint(mouseX, mouseY);
+  var scoreAmount = b.clickPoint(touchX(), touchY());
   score += scoreAmount;
   pt = new pointsText(scoreAmount);
   b = new bubble();
